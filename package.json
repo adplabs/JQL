@@ -1,0 +1,32 @@
+{
+    "name": "jsonquerylanguage",
+    "version": "0.091.004",
+    "description": "JSON Query Language",
+    "author": "Mike Klepper <MadGeometer@gmail.com>",
+
+    "repository":
+    {
+        "type": "git",
+        "url": ""
+    },
+
+    "main": "./lib/JQL",
+
+    "keywords":
+    [
+        "JSON",
+        "Query",
+        "Language"
+    ],
+
+    "dependencies":
+    {
+    },
+
+    "engines":
+    {
+        "node": "*"
+    },
+
+    "license": "MIT"
+}
