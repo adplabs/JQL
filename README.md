@@ -8,7 +8,7 @@ Installation
 
 Quick Start
 -----------
-```javascript
+
     var JQL = require("jsonquerylanguage");
     var jql = new JQL();
 
@@ -40,7 +40,24 @@ Quick Start
 
     var goodTitles = jql.searchAndGetValues(sampleJson, "$.*.reviews[?(@.nyt >= 4)].^.title");
     console.log(JSON.stringify(goodTitles, null, 5));
-```
+
+
+Tools and Docs
+--------------
+
+Here are some tools and docs to make using JQL easier to use!
+
+JSDOCS: https://developers.adp.com/JQL/JsonQueryLanguage/jsdocs/index.html
+
+JSON Renderer: https://developers.adp.com/JQL/JsonRenderer/index.html
+Click an item, and the concrete JQL path is shown at the bottom.
+
+JQL Test Page: https://developers.adp.com/JQL/JsonQueryLanguage/index.html
+Use this to test JQL paths and functions.
+
+NOTE: these tools have not gone through any serious QA process. But hey, they're free. Not free as in speech,
+or free as in beer, but free as in puppy! :-)
+
 
 Introduction
 ------------
@@ -347,20 +364,20 @@ Using JQL in JavaScript
 -----------------------
 
 ### Client-Side Setup ###
-Include script in page:^K
+Include script in page:
 
     <script type="text/javascript" src="scripts/JQL.js"></script>
 
 Create instance:
 
-        var jql = new JQL();
+	var jql = new JQL();
 
 ### Server-Side Setup ###
-Require script:^K
+Require script:
 
     var JQL = require("./utils/JQL");
 
-Create instance:^K
+Create instance:
 
     var jql = new JQL();
 
@@ -375,14 +392,14 @@ Code:
 
 Results:
 
-        ...
+	...
     "bicycle":
     {
         "color": "red",
         "price": 19.95,
         "type": "Cannondale"
     }
-        ...
+	...
 
 ### Works with Objects, too! ###
 Code:
@@ -391,7 +408,7 @@ Code:
 
 Results:
 
-        ...
+	...
     "bicycle":
     {
         "color": "red",
@@ -403,7 +420,7 @@ Results:
             "highlight":"yellow"
         }
     }
-        ...
+	...
 
 
 Retrieve
@@ -413,19 +430,18 @@ JQL can retrieve two types of results:
 + The values
 + Direct paths to the values (no wildcards)
 
-To get values, use
+To get values, use 
 
     jql.searchAndGetValues(sourceObj, jsonQuery)
 
-To get paths, use
+To get paths, use
 
     jql.searchAndGetPaths(sourceObj, jsonQuery)
 
 ### Retrieving Values ###
 Code:
 
-    var res = jql.searchAndGetValues(testObj, "$.~.price");
-    console.log(JSON.stringify(res, null, 5));
+    var res = jql.searchAndGetValues(testObj, "$.~.price");console.log(JSON.stringify(res, null, 5));
 
 Results:
 
@@ -442,7 +458,6 @@ Results:
 Code:
 
     var res = jql.searchAndGetPaths(testObj, "$.~.price");
-    
 
 Results:
 
@@ -462,16 +477,15 @@ Update
 ------
 Use
 
-
     jql.update(sourceObj, jsonQuery, replacementValue);
 
 
 Delete
 ------
-Use
-
+Use
 
     jql.remove(sourceObj, jsonDeleteQuery);
+
 
 
 
@@ -480,7 +494,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Automatic Data Processing, Inc.
+Copyright (c) 2014 ADP, Inc.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
