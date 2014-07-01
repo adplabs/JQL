@@ -1,7 +1,7 @@
 {
     "name": "jsonquerylanguage",
     "version": "0.091.005",
-    "description": "JSON Query Language",
+    "description": "JSON Query Language. An API and toolset for managing unruly JSON!",
     "author": "Mike Klepper <MadGeometer@gmail.com>",
 
     "repository":
