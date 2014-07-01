@@ -45,7 +45,7 @@ Quick Start
 Tools and Docs
 --------------
 
-Here are some tools and docs to make using JQL easier to use!
+Here are some tools and docs to make JQL easier to use! 
 
 JSDOCS: https://developers.adp.com/JQL/JsonQueryLanguage/jsdocs/index.html
 
