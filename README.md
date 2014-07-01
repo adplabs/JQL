@@ -50,9 +50,11 @@ Here are some tools and docs to make using JQL easier to use!
 JSDOCS: https://developers.adp.com/JQL/JsonQueryLanguage/jsdocs/index.html
 
 JSON Renderer: https://developers.adp.com/JQL/JsonRenderer/index.html
-Click an item, and the concrete JQL path is shown at the bottom.
+
+Click the "Render" button, then click an item, and the concrete JQL path is shown at the bottom.
 
 JQL Test Page: https://developers.adp.com/JQL/JsonQueryLanguage/index.html
+
 Use this to test JQL paths and functions.
 
 NOTE: these tools have not gone through any serious QA process. But hey, they're free. Not free as in speech,
